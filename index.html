@@ -12,7 +12,7 @@
         }
 
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Noto Sans KR', sans-serif;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
             display: flex;
@@ -32,10 +32,11 @@
             margin: 0 1rem;
         }
 
-        .icon {
-            font-size: 4rem;
+        .logo {
+            font-size: 3rem;
             margin-bottom: 1rem;
-            animation: pulse 2s infinite;
+            font-weight: bold;
+            color: #ffffff;
         }
 
         h1 {
@@ -72,10 +73,20 @@
             opacity: 0.8;
         }
 
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+        .logo-svg {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1rem;
         }
+
+        .logo-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #ffffff;
+        }
+
+
 
         @keyframes progress {
             0% { width: 0%; }
@@ -92,15 +103,29 @@
                 font-size: 1rem;
             }
             
-            .icon {
-                font-size: 3rem;
+            .logo {
+                font-size: 2.5rem;
             }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="icon">🚧</div>
+        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <!-- 배경 원 -->
+            <circle cx="50" cy="50" r="45" fill="#4ecdc4" stroke="#ffffff" stroke-width="2"/>
+            <!-- 십자 표시 (의료 상징) -->
+            <rect x="35" y="30" width="30" height="6" rx="3" fill="#ffffff"/>
+            <rect x="35" y="64" width="30" height="6" rx="3" fill="#ffffff"/>
+            <rect x="30" y="35" width="6" height="30" rx="3" fill="#ffffff"/>
+            <rect x="64" y="35" width="6" height="30" rx="3" fill="#ffffff"/>
+            <!-- 작은 원들 (진료 상징) -->
+            <circle cx="25" cy="25" r="3" fill="#ffffff"/>
+            <circle cx="75" cy="25" r="3" fill="#ffffff"/>
+            <circle cx="25" cy="75" r="3" fill="#ffffff"/>
+            <circle cx="75" cy="75" r="3" fill="#ffffff"/>
+        </svg>
+        <div class="logo-text">다음진료</div>
         <h1>홈페이지 리뉴얼 중</h1>
         <p>
             더 나은 서비스를 위해 홈페이지를 새롭게 만들고 있습니다.<br>
