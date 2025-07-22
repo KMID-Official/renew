@@ -1,4 +1,4 @@
-# 홈페이지 리뉴얼 페이지
+# 다음진료 - 홈페이지 리뉴얼 페이지
 
 ## 프로젝트 설명
 홈페이지 리뉴얼 중임을 알리는 임시 페이지입니다.
@@ -26,6 +26,6 @@ renew/
 - 순수 JavaScript (필요시 추가 가능)
 
 ## 커스터마이징
-- 이메일 주소 변경: `index.html`의 `contact@example.com` 부분 수정
+- 이메일 주소 변경: `index.html`의 `nextcheckup.contact@gmail.com` 부분 수정
 - 색상 변경: CSS의 그라디언트 색상 값 수정
 - 텍스트 변경: HTML 내의 텍스트 내용 수정 
