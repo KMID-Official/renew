@@ -74,9 +74,10 @@
         }
 
         .logo-svg {
-            width: 80px;
-            height: 80px;
+            width: 200px;
+            height: auto;
             margin: 0 auto 1rem;
+            filter: brightness(0) invert(1);
         }
 
         .logo-text {
@@ -111,20 +112,7 @@
 </head>
 <body>
     <div class="container">
-        <svg class="logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-            <!-- 배경 원 -->
-            <circle cx="50" cy="50" r="45" fill="#4ecdc4" stroke="#ffffff" stroke-width="2"/>
-            <!-- 십자 표시 (의료 상징) -->
-            <rect x="35" y="30" width="30" height="6" rx="3" fill="#ffffff"/>
-            <rect x="35" y="64" width="30" height="6" rx="3" fill="#ffffff"/>
-            <rect x="30" y="35" width="6" height="30" rx="3" fill="#ffffff"/>
-            <rect x="64" y="35" width="6" height="30" rx="3" fill="#ffffff"/>
-            <!-- 작은 원들 (진료 상징) -->
-            <circle cx="25" cy="25" r="3" fill="#ffffff"/>
-            <circle cx="75" cy="25" r="3" fill="#ffffff"/>
-            <circle cx="25" cy="75" r="3" fill="#ffffff"/>
-            <circle cx="75" cy="75" r="3" fill="#ffffff"/>
-        </svg>
+        <img src="assets/Logo.svg" alt="다음진료 로고" class="logo-svg">
         <div class="logo-text">다음진료</div>
         <h1>홈페이지 리뉴얼 중</h1>
         <p>
